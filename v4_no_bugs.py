@@ -137,6 +137,16 @@ checklists()
 b2 = Tkinter.Button(root, text = "Exit", 
             command = root.destroy)
 b2.pack(anchor = 'se')
+#entry list
+
+i=[]
+Label(root, text='WEBSITE NAME').grid(row=0)
+e= Entry(root,width=20,bg="yellow",fg="black").grid(row=0, column=1) 
+def listfunc():
+    n =e.get()
+    i=i+n
+b=Button(root,text="ENTER",command=listfunc).grid(row=1,column=1)
+print(i)
 
 
 
